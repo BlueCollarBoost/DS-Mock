@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | DS Electric</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    .about-hero {
+      background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.4)), url('images/ds-van.png') center/cover no-repeat;
+      color: #fff;
+      padding: 7rem 2rem 5rem 2rem;
+      text-align: center;
+      position: relative;
+      margin-bottom: 2.5rem;
+    }
+    .about-hero h1 {
+      font-size: 2.7rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      letter-spacing: -1.5px;
+      color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+    }
+    .about-hero p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      color: #ffe;
+    }
+    .about-values {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.07);
+      max-width: 700px;
+      margin: -5rem auto 2.5rem auto;
+      padding: 2.5rem 2rem 2rem 2rem;
+      text-align: left;
+      position: relative;
+      z-index: 2;
+    }
+    .about-values h2 {
+      text-align: center;
+      margin-bottom: 1.3rem;
+    }
+    .about-values ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .about-values li {
+      margin-bottom: 1rem;
+      font-weight: 500;
+      padding-left: 1.5em;
+      position: relative;
+      color: #004aad;
+    }
+    .about-values li:before {
+      content: "✔";
+      color: #f4b400;
+      font-size: 1.1em;
+      position: absolute;
+      left: 0;
+      top: 0.05em;
+    }
+    .owner-section {
+      max-width: 750px;
+      margin: 3.5rem auto 0 auto;
+      padding: 2.5rem 2rem;
+      background: #f9f9f9;
+      border-radius: 16px;
+      box-shadow: 0 2px 18px rgba(0,0,0,0.06);
+      text-align: left;
+    }
+    .owner-section h2 {
+      text-align: center;
+      margin-bottom: 1.1rem;
+    }
+    .owner-bio {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .owner-avatar {
+      flex: 0 0 120px;
+      width: 120px;
+      height: 120px;
+      background: #004aad;
+      color: #fff;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    .owner-details {
+      flex: 1 1 300px;
+      min-width: 200px;
+    }
+    @media (max-width: 600px) {
+      .about-hero {
+        padding: 4rem 1rem 2.5rem 1rem;
+      }
+      .about-hero h1 {
+        font-size: 1.6rem;
+      }
+      .about-values,
+      .owner-section {
+        padding: 1.2rem 0.6rem;
+        margin: 1.5rem 0;
+      }
+      .owner-bio {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+      .owner-avatar {
+        margin-bottom: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="container-fluid sticky">
+    <ul>
+      <li><img src="images/DS-logo.jpg" alt="DS Electric" style="height: 40px;" /></li>
+    </ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown-parent">
+        <a href="#">Services ▾</a>
+        <ul class="dropdown">
+          <li><a href="services.html#residential">Residential</a></li>
+          <li><a href="services.html#commercial">Commercial</a></li>
+          <li><a href="services.html#industrial">Industrial</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" role="button">Get a Quote</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="about-hero">
+      <h1>About DS Electric</h1>
+      <p>
+        Proudly serving Windsor-Essex since 2013. <br>
+        Trusted, experienced, and always local.
+      </p>
+    </section>
+
+    <section class="about-values" data-aos="fade-up">
+      <h2>Why People Choose Us</h2>
+      <ul>
+        <li>10+ years of hands-on experience</li>
+        <li>Licensed Master Electrician & insured team</li>
+        <li>Honest advice and transparent quotes</li>
+        <li>24/7 emergency response</li>
+        <li>Friendly, reliable, and always on time</li>
+      </ul>
+    </section>
+
+    <section class="owner-section" data-aos="fade-up">
+      <h2>Meet the Owner</h2>
+      <div class="owner-bio">
+        <div class="owner-avatar">MS</div>
+        <div class="owner-details">
+          <p>
+            <strong>Mike S.</strong> is the founder and Master Electrician behind DS Electric. Starting out as an apprentice right here in Windsor, Mike worked his way up from residential service calls to complex commercial and industrial projects across Essex County.
+          </p>
+          <p>
+            With over a decade in the field, Mike’s philosophy is simple: <b>do the job right, treat every client with respect, and never cut corners</b>. He’s personally overseen everything from new home builds and major panel upgrades to troubleshooting tough issues that other contractors walk away from.
+          </p>
+          <p>
+            Mike’s team is small by design—every project gets his hands-on attention and the highest level of care. He believes in:
+          </p>
+          <ul>
+            <li>Clear, honest communication from quote to finish</li>
+            <li>Showing up on time and doing what we say we’ll do</li>
+            <li>Staying up-to-date with code and new technology</li>
+            <li>Building lasting relationships with customers</li>
+          </ul>
+          <p>
+            In his free time, you’ll find Mike helping out at community events, taking courses to keep his skills sharp, or volunteering to wire up local non-profits.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-footer-white" data-aos="fade-up" style="margin-top: 3rem;">
+      <div class="container">
+        <h2>Need reliable electrical work?</h2>
+        <a href="contact.html" class="button primary">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-dark">
+    <div class="container grid">
+      <div>
+        <h4>DS Electric</h4>
+        <p>Serving Windsor-Essex with licensed electrical work since 2013.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>
+          <a href="tel:5199996453">(519) 999-6453</a><br>
+          <a href="mailto:info@dselectricwindsor.com">info@dselectricwindsor.com</a><br>
+        </p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p>
+          <a href="services.html">Services</a><br>
+          <a href="about.html">About</a><br>
+          <a href="contact.html">Contact</a>
+        </p>
+      </div>
+    </div>
+    <p style="margin-top:2rem; font-size: 0.9rem;">Built by Blue Collar Boost</p>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

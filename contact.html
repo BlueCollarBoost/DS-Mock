@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | DS Electric</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    .contact-hero {
+      background: linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.19)), url('images/hero-bg.jpg') center/cover no-repeat;
+      color: #fff;
+      padding: 6rem 2rem 4rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+    .contact-hero h1 {
+      color: #fff !important;
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.37);
+      margin-bottom: 1rem;
+    }
+    .contact-hero p {
+      color: #fff;
+      font-size: 1.15rem;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.29);
+      margin-bottom: 0.5rem;
+    }
+    .contact-content {
+      display: flex;
+      gap: 2.5rem;
+      max-width: 950px;
+      margin: -4rem auto 2.5rem auto;
+      background: #fff;
+      box-shadow: 0 8px 36px rgba(0,0,0,0.10);
+      border-radius: 18px;
+      padding: 3rem 2rem;
+      position: relative;
+      z-index: 2;
+      flex-wrap: wrap;
+    }
+    .contact-form {
+      flex: 2 1 340px;
+      min-width: 290px;
+    }
+    .contact-info {
+      flex: 1 1 220px;
+      min-width: 220px;
+      margin-left: 1rem;
+      font-size: 1rem;
+    }
+    .contact-info h3 {
+      margin-bottom: 1.1rem;
+      color: #004aad;
+    }
+    .contact-info ul {
+      padding: 0;
+      list-style: none;
+      margin: 0 0 1.5rem 0;
+    }
+    .contact-info li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.1rem;
+      color: #222;
+      gap: 0.8rem;
+      font-weight: 500;
+    }
+    .contact-info li svg {
+      width: 22px;
+      height: 22px;
+      color: #004aad;
+      flex-shrink: 0;
+    }
+    .contact-info a {
+      color: #004aad;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+      color: #f4b400;
+    }
+    /* Responsive */
+    @media (max-width: 900px) {
+      .contact-content {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 2rem 0.5rem;
+      }
+      .contact-info {
+        margin-left: 0;
+        margin-top: 2rem;
+        text-align: left;
+      }
+    }
+    /* Google Map */
+    .contact-map {
+      width: 100%;
+      height: 260px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 2.5rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+  </style>
+</head>
+<body>
+  <nav class="container-fluid sticky">
+    <ul>
+      <li><img src="images/DS-logo.jpg" alt="DS Electric" style="height: 40px;" /></li>
+    </ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown-parent">
+        <a href="#">Services ▾</a>
+        <ul class="dropdown">
+          <li><a href="services.html#residential">Residential</a></li>
+          <li><a href="services.html#commercial">Commercial</a></li>
+          <li><a href="services.html#industrial">Industrial</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" role="button">Get a Quote</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact-hero">
+    <h1>Contact DS Electric</h1>
+    <p>Quick response. Upfront pricing. Local electricians who care.<br>Call or message us today!</p>
+  </section>
+
+  <main>
+    <section class="contact-content" data-aos="fade-up">
+      <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
+        <h2 style="font-size:1.4rem; color:#004aad; margin-bottom:1.5rem;">Send Us a Message</h2>
+        <div style="margin-bottom:1.1rem;">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your Name">
+        </div>
+        <div style="margin-bottom:1.1rem;">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com">
+        </div>
+        <div style="margin-bottom:1.1rem;">
+          <label for="phone">Phone (optional)</label>
+          <input type="text" id="phone" name="phone" placeholder="(123) 456-7890">
+        </div>
+        <div style="margin-bottom:1.1rem;">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required placeholder="How can we help?"></textarea>
+        </div>
+        <button type="submit" class="button primary" style="width:100%;">Send Message</button>
+        <p style="font-size:0.93rem; margin-top:0.6rem; color:#666;">Or email us directly: <a href="mailto:info@dselectricwindsor.com">info@dselectricwindsor.com</a></p>
+      </form>
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+        <ul>
+          <li>
+            <!-- Phone Icon -->
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" stroke="#004aad" stroke-width="2"/></svg>
+            <a href="tel:5199996453">(519) 999-6453</a>
+          </li>
+          <li>
+            <!-- Email Icon -->
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4V4z" stroke="#004aad" stroke-width="2"/><path d="M22 6l-10 7L2 6" stroke="#004aad" stroke-width="2"/></svg>
+            <a href="mailto:info@dselectricwindsor.com">info@dselectricwindsor.com</a>
+          </li>
+          <li>
+            <!-- Location Icon -->
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4.5 8-10A8 8 0 1 0 4 12c0 5.5 8 10 8 10z" stroke="#004aad" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="#004aad" stroke-width="2"/></svg>
+            <span class="footer-location">Windsor-Essex, ON</span>
+          </li>
+        </ul>
+        <div>
+          <a href="https://www.google.com/maps/place/DS+Electric+Ltd/@42.2718943,-82.9833148,17z/data=!3m1!4b1!4m6!3m5!1s0x883b2b7ee26bb0a3:0x79b18c062bf5a5fb!8m2!3d42.2718943!4d-82.9807399!16s%2Fg%2F11hf5pcw55?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">View Map</a>
+        </div>
+      </div>
+    </section>
+    <!-- Optionally include a map embed here -->
+    <!--
+    <iframe
+      class="contact-map"
+      src="https://www.google.com/maps/place/DS+Electric+Ltd/@42.2718943,-82.9833148,17z/data=!3m1!4b1!4m6!3m5!1s0x883b2b7ee26bb0a3:0x79b18c062bf5a5fb!8m2!3d42.2718943!4d-82.9807399!16s%2Fg%2F11hf5pcw55?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    -->
+  </main>
+
+  <footer class="footer-dark">
+    <div class="container grid">
+      <div>
+        <h4>DS Electric</h4>
+        <p>Serving Windsor-Essex with licensed electrical work since 2013.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>
+          <a href="tel:5199996453">(519) 999-6453</a><br>
+          <a href="mailto:info@dselectricwindsor.com">info@dselectricwindsor.com</a><br>
+        </p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p>
+          <a href="services.html">Services</a><br>
+          <a href="about.html">About</a><br>
+          <a href="contact.html">Contact</a>
+        </p>
+      </div>
+    </div>
+    <p class="builtby">Built by Blue Collar Boost</p>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
